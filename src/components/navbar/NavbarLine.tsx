@@ -2,7 +2,7 @@ import React from "react";
 
 const NavbarLine = () => {
   return (
-    <nav className="bg-blue-500 text-black px-4 py-2 md:px-20 md:5 sticky top-0">
+    <nav className="bg-blue-500 text-black px-4 py-5 md:px-20 md:5 sticky top-0">
       <div className="flex justify-between items-center">
         <div className="font-bold text-4xl text-black hover:text-blue-300 list-none">
           <li>
