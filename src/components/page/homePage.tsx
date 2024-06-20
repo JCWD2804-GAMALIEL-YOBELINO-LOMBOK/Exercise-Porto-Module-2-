@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Profile from "../profile/PROFILE1.jpg";
 
 const homePage = () => {
   return (
@@ -8,8 +10,8 @@ const homePage = () => {
         <div className="container mx-auto px-4">
           <div className="pt-10 text-center">
             <div className="flex justify-center items-center">
-              <img
-                src="https://3.bp.blogspot.com/-9YDmRdOQO5Y/W7ql9HZvhDI/AAAAAAAADJc/4WizmhdNBiArkst_o_3ArR2RmSyaYCCoACLcBGAs/s1600/-social%2Bmedia%2Bprofile%2Bpicture-3.jpg"
+              <Image
+                src={Profile}
                 alt="Profil"
                 className="w-60 h-60 bg-black rounded-full"
               />
@@ -40,14 +42,18 @@ const homePage = () => {
           </div>
           <div className="text-center mt-5 md:mt-0 md:text-left md:w-1/2 md:pl-5">
             <h2 className="text-2xl md:text-3xl font-semibold mb-2">Details</h2>
-            <p className="p-1">
+            <h5 className="p-1 font-bold">
               Name: <br />
-              Gamaliel Yobelino Lombok <br />
+              <span className="font-normal">Gamaliel Yobelino Lombok</span>
+            </h5>
+            <h5 className="p-1 font-bold">
               age: <br />
-              25 years <br />
+              <span className="font-normal">25 years</span>
+            </h5>
+            <h5 className="p-1 font-bold">
               Location: <br />
-              South Jakarta
-            </p>
+              <span className="font-normal">South Jakarta</span>
+            </h5>
           </div>
         </div>
       </section>
